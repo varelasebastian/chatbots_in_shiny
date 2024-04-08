@@ -64,7 +64,7 @@ chat <- function(message) {  #define una función llamada chat, con el argumento
   
   openai_chat_response <- resp |> resp_body_json(simplifyVector = TRUE) #extrae la respuesta de la API y transforma el formato de json a R.
   
-  openai_chat_response$choices$message$content  #accede al elemento "choices" de la respuesta, luego al elemento "message", y luego al elemento "content", recuperando la respuesta
+  openai_chat_response$choices$message$content  #accede al elemento "choices" de la respuesta, luego al elemento "message", y luego al elemento "content", recuperando la respuesta.
 }
 ```
 
